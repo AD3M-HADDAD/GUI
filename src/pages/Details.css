@@ -1,0 +1,56 @@
+.details {
+  margin-left: 260px; /* Align with the margin of the main content */
+  padding: 5%;
+  background-color: #f2f2f2;
+  height: 3000px;
+}
+
+.details h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.details h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.details h4 {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  cursor: pointer; /* Change cursor to pointer for clickable effect */
+  color: #008839ee; /* Change color for better visibility */
+}
+
+.details p, .details .no-details {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.details pre {
+  background-color: #e6e6e6;
+  padding: 15px;
+  border: 1px solid #d3d3d3c9;
+  border-radius: 5px;
+  overflow-x: auto;
+  white-space: pre-wrap; /* Wrap text */
+  word-wrap: break-word; /* Break long words */
+}
+
+.portInfo {
+  margin-top: 20px;
+}
+
+.portInfoEntry {
+  margin-bottom: 20px;
+}
+
+.portInfoEntry h4 {
+  margin-bottom: 5px;
+}
+

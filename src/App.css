@@ -1,0 +1,435 @@
+/* Filename: App.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper > div {
+  border: 2px solid rgb(228, 225, 221);
+  border-radius: 5px;
+  background-color: white;
+  padding: 1em;
+  color: #333;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.manual {
+  grid-column: 2 / 4;
+  grid-row: 3;
+}
+.cve {
+  grid-column:  2 ; /* Adjusted */
+  grid-row: 4; /* Adjusted */
+}
+.ServiceName {
+  grid-column: 1;
+  grid-row: 2 / 5;
+}
+.time {
+  grid-column: 1;
+  grid-row: 1;
+}
+.ip {
+  grid-column: 3;
+  grid-row: -2;
+}
+.ports {
+  grid-column: 2;
+  grid-row: 1;
+}
+.ServicesChart {
+  grid-column: 3;
+  grid-row: 1;
+}
+.commands {
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+.error {
+  grid-column:  3 / 4 ; /* Adjusted */
+  grid-row: 4; /* Adjusted */
+}
+	
+.dashboard{
+  background-color: #f2f2f2;
+  
+}
+
+
+.user,
+.dashboard,
+.nmap,
+.nmap1,
+.nmap2,
+.allOutput,
+.vuln,
+.vuln1,
+.vuln2,
+.vuln3,
+.support {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 1rem;
+  
+  
+}
+.dashboard{
+  padding-top: 4% ;
+ 
+}
+
+
+/* Increase the size of the dataCard */
+.dataCard {
+  background-color: #efefef;
+  height: 10rem;
+  width: 50%;
+  border-radius: 0.5em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1em;
+  margin-right: auto;
+}
+
+/* button select card (user.js) */
+.selectCard {
+  width: 70%;
+  height: 30rem;
+}
+
+/* Increase the size of the revenueCard */
+.revenueCard {
+  width: 50%;
+  height: 40rem;
+}
+
+/* Increase the size of the customerCard */
+.customerCard {
+  width: 40%;
+  height: 40rem;
+}
+
+.manualCard {
+  width: 80%;
+  height: 30rem;
+}
+
+/* Increase the size of the categoryCard */
+.categoryCard {
+  width: 40%;
+  height: 80rem;
+}
+
+.nmap {
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  align-content: center;
+  gap: 2vw;
+  flex-wrap: wrap;
+  background-color: #ddd;
+  margin-top: 1px;
+}
+
+/* button css (user.js) */
+.button {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+/* drop down style (user.js) */
+.dropbtn {
+  background-color: #12bc64;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+/* pop up css */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  max-width: 1100px;
+  max-height: 970px;
+  position: relative;
+  z-index: 1001;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: #06d85f;
+}
+
+.popup .content {
+  max-height: 70vh;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .popup {
+    width: 70%;
+  }
+}
+
+/* table style */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* New styles for flexbox layout */
+.dataContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dataCard {
+  flex: 1 1 calc(33.33% - 20px);
+  margin: 10px;
+}
+
+.statusPortCard {
+  margin: 40px;
+  padding: 40px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  overflow: auto;
+  height: 35%;
+  width: 15%;
+}
+.statusServicesCard {
+  margin: 40px;
+  padding: 40px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  overflow: auto;
+  height: 35%;
+  width: 35%;
+}
+
+
+.btn-group .button {
+  background-color: green;/* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+}
+
+.btn-group .button:hover {
+  background-color: rgba(63, 63, 233, 0.556);
+}
+
+
+
+.accordion-input {
+  display: none;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: #c2c2c2 1px solid;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+
+.panel {
+  padding: 0 18px;
+  background-color: rgba(214, 214, 214, 0.603);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-input:checked + .accordion {
+  background-color: #2f2c2c;
+}
+
+.accordion-input:checked + .accordion + .panel {
+  max-height: 200px; /* Set to your desired height */
+}
+
+.details {
+  display: flex;
+  margin-left: 260px;
+  font-size: 1rem;
+  flex-direction: column; /* Ensure content is displayed in a column */
+  padding: 20px; /* Add some padding for better readability */
+}	
+
+/* Add styles for other elements inside Details */
+.details h1,
+.details h2,
+.details p,
+.details pre {
+  margin-bottom: 15px;
+}
+
+.allOutput{
+  display: flex;
+  margin-left: 260px;
+  font-size: 1rem;
+  flex-direction: column; /* Ensure content is displayed in a column */
+  padding: 20px; /* Add some padding for better readability */
+}
+
+
+
+.accordion1-input {
+  display: none;
+}
+
+.accordion1 {
+  background-color: #e2e2e2;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: #c2c2c2 1px solid;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+
+.panel1 {
+  padding: 0 18px;
+  background-color: rgba(214, 214, 214, 0.603);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion1-input:checked + .accordion {
+  background-color: #2f2c2c;
+}
+
+.accordion1-input:checked + .accordion + .panel {
+  max-height: 200px; /* Set to your desired height */
+}

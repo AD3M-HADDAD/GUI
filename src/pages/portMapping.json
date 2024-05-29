@@ -1,0 +1,130 @@
+{
+    "21": {
+        "service": "FTP",
+        "description": "File Transfer Protocol (FTP) is used for transferring files between a client and server on a network."
+    },
+    "22": {
+        "service": "SSH",
+        "description": "Secure Shell (SSH) is a cryptographic network protocol used for secure communication over an unsecured network."
+    },
+    "23": {
+        "service": "Telnet",
+        "description": "Telnet is a network protocol used to provide text-oriented communications between a client and a server."
+    },
+    "25": {
+        "service": "SMTP",
+        "description": "Simple Mail Transfer Protocol (SMTP) is an internet standard for email transmission."
+    },
+    "53": {
+        "service": "DNS",
+        "description": "Domain Name System (DNS) is a hierarchical and decentralized naming system for computers, services, or other resources connected to the Internet."
+    },
+    "80": {
+        "service": "HTTP",
+        "description": "Hypertext Transfer Protocol (HTTP) is the foundation of data communication for the World Wide Web."
+    },
+    "110": {
+        "service": "POP3",
+        "description": "Post Office Protocol version 3 (POP3) is a standard mail protocol used to receive emails from a remote server to a local email client."
+    },
+    "123": {
+        "service": "NTP",
+        "description": "Network Time Protocol (NTP) is used to synchronize the clocks of computers over a network."
+    },
+    "135": {
+        "service": "Microsoft RPC",
+        "description": "Microsoft Remote Procedure Call (RPC) is a protocol that one program can use to request a service from a program located on another computer in a network."
+    },
+    "137": {
+        "service": "NetBIOS Name Service",
+        "description": "NetBIOS Name Service provides a way to manage NetBIOS name resolution used by clients on the same network."
+    },
+    "138": {
+        "service": "NetBIOS Datagram Service",
+        "description": "NetBIOS Datagram Service allows NetBIOS names to be resolved into IP addresses."
+    },
+    "139": {
+        "service": "NetBIOS Session Service",
+        "description": "NetBIOS Session Service provides a way for applications to create sessions with each other."
+    },
+    "143": {
+        "service": "IMAP",
+        "description": "Internet Message Access Protocol (IMAP) is an internet standard protocol used by email clients to retrieve email messages from a mail server over a TCP/IP connection."
+    },
+    "161": {
+        "service": "SNMP",
+        "description": "Simple Network Management Protocol (SNMP) is an internet standard protocol used to manage and monitor network devices."
+    },
+    "443": {
+        "service": "HTTPS",
+        "description": "HTTPS (Hypertext Transfer Protocol Secure) is an extension of HTTP that is used for secure communication over a computer network."
+    },
+    "445": {
+        "service": "SMB",
+        "description": "Server Message Block (SMB) is a network file sharing protocol."
+    },
+    "465": {
+        "service": "SMTPS",
+        "description": "SMTPS (Simple Mail Transfer Protocol Secure) is a variant of SMTP with TLS encryption."
+    },
+    "514": {
+        "service": "Syslog",
+        "description": "Syslog is a protocol used for forwarding log messages in an IP network."
+    },
+    "587": {
+        "service": "SMTP (Mail submission)",
+        "description": "SMTP (Mail Submission) is a protocol used for email transmission."
+    },
+    "993": {
+        "service": "IMAPS",
+        "description": "IMAPS (Internet Message Access Protocol Secure) is an extension of IMAP that operates over SSL/TLS."
+    },
+    "995": {
+        "service": "POP3S",
+        "description": "POP3S (Post Office Protocol 3 Secure) is an extension of POP3 that operates over SSL/TLS."
+    },
+    "1433": {
+        "service": "Microsoft SQL Server",
+        "description": "Microsoft SQL Server is a relational database management system developed by Microsoft."
+    },
+    "1521": {
+        "service": "Oracle",
+        "description": "Oracle Database is a multi-model database management system developed by Oracle Corporation."
+    },
+    "3306": {
+        "service": "MySQL",
+        "description": "MySQL is an open-source relational database management system."
+    },
+    "3389": {
+        "service": "RDP",
+        "description": "Remote Desktop Protocol (RDP) is a proprietary protocol developed by Microsoft for remote access to Windows-based systems."
+    },
+    "5432": {
+        "service": "PostgreSQL",
+        "description": "PostgreSQL is a powerful, open-source object-relational database system."
+    },
+    "5900": {
+        "service": "VNC",
+        "description": "Virtual Network Computing (VNC) is a graphical desktop-sharing system that uses the Remote Frame Buffer protocol to remotely control another computer."
+    },
+    "8080": {
+        "service": "HTTP Alt",
+        "description": "Alternative port for HTTP service."
+    },
+    "8443": {
+        "service": "HTTPS Alt",
+        "description": "Alternative port for HTTPS service."
+    },
+    "27017": {
+        "service": "MongoDB",
+        "description": "MongoDB is a cross-platform document-oriented database program."
+    },
+    "28017": {
+        "service": "MongoDB HTTP",
+        "description": "HTTP Interface for MongoDB."
+    },
+    "50000": {
+        "service": "SAP",
+        "description": "SAP NetWeaver Application Server is the foundation of the SAP NetWeaver platform."
+    }
+}
